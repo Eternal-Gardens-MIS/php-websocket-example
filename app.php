@@ -1,11 +1,13 @@
 <?php
 
 ini_set('display_errors', 1);
+date_default_timezone_set('Asia/Manila');
+
 use Ratchet\Http\HttpServer;
 use Ratchet\Server\IoServer;
 use Ratchet\WebSocket\WsServer;
 
-require dirname(__FILE__).'/vendor/autoload.php';
+require dirname(__FILE__) . '/vendor/autoload.php';
 
 include 'app/socket.php';
 
